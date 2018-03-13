@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2>Total Gold: {{gold}}</h2>
+  <div>
+    <div class='locations' id='farm'>
+      <h3>Farm</h3>
+      <h4>Earns 2-5 Gold</h4>
+      <button (click)='farm()'>Farm!</button>
+    </div>
+    <div class='locations' id='cave'>
+      <h3>Cave</h3>
+      <h4>Earns 5-10 Gold</h4>
+      <button (click)='cave()'>Cave!</button>
+    </div>
+    <div class='locations' id='house'>
+      <h3>House</h3>
+      <h4>Earns 7-15 Gold</h4>
+      <button (click)='house()'>House!</button>
+    </div>
+    <div class='locations' id='casino'>
+      <h3>Casino</h3>
+      <h4>Earn or Lose up to 100 Gold</h4>
+      <button (click)='casino()'>Casino!</button>
+    </div>
+  </div>
+  <div id="log" class='logs'>
+    <h1>Adventure Log</h1>
+    <p *ngFor='let log of logs.reverse()'>{{log}}</p>
+  </div>
+  <div class="logs">
+    <h1>Leaderboard</h1>
+    <p *ngFor='let lead of leaders'>{{lead._id}} - {{lead.gold}}</p>
+  </div>
+</div>
+
+
+

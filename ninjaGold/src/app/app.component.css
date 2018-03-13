@@ -1,0 +1,18 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.locations{
+    display: inline-block;
+    padding: 5%;
+}
+button{
+    padding: 5%;
+}
+.logs{
+    display: inline-block;
+    border: 2px solid green;
+    overflow: scroll;
+    width: 400px;
+    height: 150px;
+}
